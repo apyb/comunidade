@@ -14,6 +14,6 @@ Espaço para discussão em torno da APyB e da comunidade Python no Brasil.
 
 ### Ativando notificações
 
-Para receber uma notificação quando uma nova discussão for iniciada ou atualizada, ative as notificações do repositório. Esse comportamento é semelhante ao que temos na lista de e-mails e, considerando que esse repositório será usado apenas para as discussões (sem issues ou pull requests), apenas e-mails e notificações sobre discussões serão enviados.
+Para receber uma notificação quando uma nova discussão for iniciada ou atualizada, ative as notificações do repositório. Considerando que o mesmo será usado apenas para as discussões (sem issues ou pull requests), apenas e-mails e notificações sobre discussões serão enviados. Desta forma, assemelha-se ao comportamento atual que temos na lista de e-mails.
 
 <img width="1510" alt="Screenshot 2022-02-21 at 18 56 11" src="https://user-images.githubusercontent.com/431892/155013834-708c6ae9-2a64-4642-b50a-95eecac3b3d1.png">
