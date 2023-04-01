@@ -1,0 +1,24 @@
+name: Notifica Lista de E-mail da Associação
+on:
+  discussion:
+    types: [created]
+
+jobs:
+  notify_associates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
+      - name: Instala apyb-bot
+        run: pip install git+https://github.com/apyb/apyb-bot.git
+
+      - name: Notifica lista de e-mail da APyB
+        env:
+          APYB_BOT_GITHUB_TOKEN: ${{ secrets.APYB_BOT_GITHUB_TOKEN }}
+          APYB_BOT_NO_REPLY_PASSWORD: ${{ secrets.APYB_BOT_NO_REPLY_PASSWORD }}
+          APYB_BOT_SEND_TO: ${{ secrets.APYB_BOT_SEND_TO }}
+        run: apyb-bot github:new-discussion-notification --id ${{ github.event.discussion.number }}
