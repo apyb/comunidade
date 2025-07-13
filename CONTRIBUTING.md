@@ -1,6 +1,6 @@
-# Guia de Proteção de Dados Pessoais - LGPD
+# Guia de boas práticas de contribuição na comunidade da Associação Python Brasil (APyB)
 
-Este documento estabelece diretrizes para a proteção de dados pessoais em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) e boas práticas de segurança da informação.
+Este documento estabelece diretrizes de como contribuir com discussões nesse repositório, prezando manter o ambiente saudável, seguro, livre de preconceitos, em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) e boas práticas de segurança da informação.
 
 ## 🛡️ Princípios Fundamentais da LGPD
 
@@ -84,19 +84,6 @@ DATABASE_URL = "postgresql://usuario:senha@localhost/nome_db"
 - Remova tokens de autenticação de configurações de exemplo
 - Use ferramentas como `git-secrets` para prevenção
 
-## 📋 Checklist de Verificação
-
-Antes de postar ou fazer commit, verifique:
-
-- [ ] Não há CPF, RG, ou outros documentos pessoais
-- [ ] Endereços e telefones foram removidos ou anonimizados
-- [ ] E-mails pessoais foram substituídos por exemplos genéricos
-- [ ] Credenciais de API e senhas estão como placeholders
-- [ ] Screenshots não contêm dados pessoais
-- [ ] Logs foram sanitizados
-- [ ] Dados de exemplo são fictícios
-- [ ] Informações sensíveis sobre terceiros foram removidas
-
 ## 🚨 Em Caso de Vazamento Acidental
 
 ### Ações Imediatas:
@@ -105,16 +92,6 @@ Antes de postar ou fazer commit, verifique:
 3. **Documente** o incidente para análise
 4. **Comunique** às pessoas afetadas, se aplicável
 
-### Para Repositórios Git:
-```bash
-# Remover arquivo do histórico completamente
-git filter-branch --force --index-filter \
-'git rm --cached --ignore-unmatch arquivo-sensivel.txt' \
---prune-empty --tag-name-filter cat -- --all
-
-# Forçar push (cuidado!)
-git push origin --force --all
-```
 
 ## 📞 Contato para Questões de Privacidade
 
